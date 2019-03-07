@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Clean Blog - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('home') }}">Hull Tactical ERP Prediction Contest</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+                <style type="text/css">
+              #mainNav .navbar-nav > li.nav-item > a {
+                font-size: 20px;
+                color: yellow;
+                font-weight: 800;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+              }
+                </style>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('rules') }}">Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('data') }}">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('/static/ucsb_images/stock.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Data</h1>
+            <span class="subheading">Get your hands dirty and write some codes!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <font size="3">
+        The ERP contest is about prediction of the stock market. The
+        objective is to build a predictive model for weekly S&amp;P 500
+        returns. 
+        <br>
+        <br>
+        For this purpose Hull Tactical is providing you with 
+        this <a href="/static/dataset.csv"> <font size="4" color=#0d47a1><b>data set</b></font></a>
+        of variables that may aid this task. 
+        There are numerous ways to build a prediction model, ranging from a
+        simple linear regression to more sophisticated methods from
+        machine learning. 
+
+        <br>
+        <br>
+        The research team at Hull Tactical has
+        described some of their experiences with S&amp;P 500 prediction in the
+        following articles:
+        <br>
+        <br>
+        <li>
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3050254"><font color = #0d47a1><b>Return Predictability and Market-Timing: A One-Month Model</font></b></a>
+      </li>
+      <li>
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3165669"><font color = #0d47a1><b>Seasonal Effects and Other Anomalies</font></b></a> 
+        </li>
+        <li>
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2609814"><font color = #0d47a1><b>A Practitioner's Defense of Return Predictability</font></b></a>
+      </li>
+        <br>
+
+        The data file above contains various financial variables over a
+        span of 1952-2017. A brief description of each of these variables may be
+        found <a href="variables.pdf">here</a>. To get started on building an intuition as to why
+        these may hold predictive power, you may look at the
+        <a href="https://en.wikipedia.org/wiki/Baltic_Dry_Index">Baltic
+        Dry Index</a> (BDIY), the
+        <a href="https://en.wikipedia.org/wiki/VIX">Volatility Index</a> (VIX),
+        <a href="https://en.wikipedia.org/wiki/Calendar_effect">calendar
+        effect</a> (SIM, TOM) and 
+        <a href="http://hulbertratings.com/stock-sentiment">sentiment
+        index</a> (Hulbert).
+        You can find all of these variables in the description files
+        linked above.
+
+        </font>
+
+        <br>
+        <br>
+
+        <i><font size="4"> ** Please do not use the Hull Tactical data set for any purpose
+        other than the ERP contest.</font></i>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <br>
+
+          <a href="http://www.ucsb.edu/" onclick="target='_blank'">
+         <img src="/static/ucsb_images/ucsb_logo.png" width="120" alt="UCSB circle logo" style="display: block; margin: 0 auto; margin-top: 20">
+          </a>  
+          <br>
+          <img src="/static/ucsb_images/logo_hull.png" width="120" alt="Hull tactical logo" style="display: block; margin: 0 auto; margin-top: 20">  
+          <p class="copyright text-muted">Copyright &copy; UCSB Department of Statistics 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/static/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<html>
+<body>
+  <?link rel= "stylesheet" type= "text/css" ref=static/css/leaderboard.css>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <main role="main" class="inner mt-4">
+      <table class="table">
+        <thead>
+          <th scope="col">#</th>
+          <th scope="col">Team</th>
+          <th scope="col">Score</th>
+        </thead>
+        <tbody>
+          {% for s in data %}
+          <tr>
+            <th scope="row">{{loop.index}}</th>
+            <td>{{s.teamname}}</td>
+            <td>{{s.output}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The UCSB Department of Statistics & Applied Probability and the Center for Financial Mathematics and Actuarial Research are partnering with Hull Tactical to run a data science contest on predicting the S&P 500 returns. Undergraduate and Masters students may participate in teams of up to 4 members, to compete for total prizes of $7000 in two categories: (i) Best Prediction and (ii) Most Creative. The prizes up for grab include $2500 for the winner and $1000 for the runner-up in each catergory.">
+  <meta name="author" content="Lu Han">
+
+  <title>Home | ERP Contest</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('home') }}">Hull Tactical ERP Prediction Contest</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+                <style type="text/css">
+              #mainNav .navbar-nav > li.nav-item > a {
+                font-size: 20px;
+                color: yellow;
+                font-weight: 800;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+              }
+                </style>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('rules') }}">Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('data') }}">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('/static/ucsb_images/stock2.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+
+            <h1>ERP Prediction Contest</h1>
+            <span class="subheading">February 15, 2019 - May 15, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <font size="3">
+        The Department of Statistics &amp; Applied Probability and the
+        Center for Financial Mathematics and Actuarial Research are
+        partnering with <a href="http://hulltactical.com">Hull
+        Tactical</a> to run a data science contest on predicting the
+        S&amp;P 500 returns. Undergraduate and Masters students may
+        participate in teams of up to 4 members, to compete for 
+        total prizes of <b>$7000</b>
+        in two categories: (i) <b> Best Prediction </b>
+        and (ii) <b> Most Creative.</b> The prizes up for grab
+        include <b>$2500 for the winner</b> and 
+        <b>$1000 for the runner-up</b> 
+        in each catergory. 
+        </font>
+        <hr>
+        <br>
+        <font size="4">
+        <b> Announcements </b>
+        </font>
+        <br>
+        <br>
+        <font size="3">
+        <ul>
+        <li><a href="http://en.wikipedia.org/wiki/Blair_Hull">Blair Hull</a>,
+          founder and chairman of Hull Tactical, is giving a special 
+          lecture on Thursday February 21 at 5:00pm in Buchanan 1920.
+          Here is the original <a href="/static/ucsb_images/hull-flyer.pdf">flyer</a>.
+        </li>
+        <li> Aditya's office hours will begin on the week of March 4th and
+        will be held every Monday from 2:00--3:00pm in SH 5607F.
+        </li>
+        <li>
+          To receive ERP contest related email announcements please 
+        join our 
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScEOB7WK8RUp9HQywPLDQtjYpf1cvxnNZ6w3Fa9Z5kb-pOgdw/viewform">mailing list</a>.
+        </li>
+        <li>
+          Hull Tactical will hold their first conference call to 
+        discuss indicators and modelling techniques on March 6th
+        at 2:00pm. 
+        Dial-in Number: (605) 475-3235, Access Code: 522939#.
+        </li>
+        </ul>
+        </font>
+        <hr>
+        <br>
+        <font size="4">
+        <b> Timeline </b>
+        </font>
+        <br>
+        <br>
+        <font size="3">
+        <ul>
+          <li>Team registration opens February 15th.</li>
+          <li> <a href="http://en.wikipedia.org/wiki/Blair_Hull">Blair Hull</a>
+          of Hull Tactical will make a special presentation 
+          on February 21st.</li>
+          <li>The first submission deadline for the Best Prediction
+          category is April 8th.</li> 
+          <li> The live portion of the prediction contest begins
+          April 8th and ends May 8th.</li>
+          <li>Submissions for the Most Creative category are
+          due on May 8th.</li>
+          <li>The contest ends May 8th with winners announced soon 
+          after.</li>
+          <li>Winning teams present their work 
+          and are awarded prizes on May 16th.</li>
+        </ul>
+        </font>
+        <hr>
+        <br>
+        <font size="4">
+        <b> Registration </b>
+        </font>
+        <br>
+        <br>
+        <font size="3">
+        Register your team  <a href="https://goo.gl/forms/hE8Nwm6zRWkz8Fil2">here</a>
+        or search for like-minded teammates <a href="https://goo.gl/forms/N6NzZmKIcjYUxihv1">here</a>.
+        Here is the <a href="https://goo.gl/BwG2wy">list of everyone</a>
+        who searched for a team.
+        Registration ends on March 15th. You are allowed to 
+        register a team of up to 4 students (currently enrolled
+        at UCSB). At most one Master's student can participate
+        per team and no PhD students are allowed entry.
+        </font>
+        <hr>
+        <br>
+        <font size="4">
+        <b> Office Hours </b>
+        </font>
+        <br>
+        <br>
+        <font size="3">
+        Our PSTAT PhD candidate Aditya Maheshwari will be available
+        during office hours to provide help with your progress in either
+        of the contest categories. Aditya's office hours will be
+        held every Monday at 2:00-3:00pm in SH 5607F.
+        You can also email all questions to 
+        <a href="mailto:erpcontest@gmail.com" target="_top">erpcontest@gmail.com</a>.
+        </font>
+
+        <hr>
+        <br>
+        <font size="4">
+        <b> Contact </b>
+        </font>
+
+        <br>
+        <br>
+        <font size="3">
+        <i> For contest related inquiries you may email <a href="mailto:erpcontest@gmail.com" target="_top">erpcontest@gmail.com</a>.
+        Please do <b>NOT</b> email the PSTAT staff or faculty with any contest related questions.
+        </i>
+        </font>
+        <br>
+        <br>
+        <br>
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="{{ url_for('home') }}">Back to Top &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <br>
+
+          <a href="http://www.ucsb.edu/" onclick="target='_blank'">
+         <img src="/static/ucsb_images/ucsb_logo.png" width="120" alt="UCSB circle logo" style="display: block; margin: 0 auto; margin-top: 20">
+          </a>  
+          <br>
+          <img src="/static/ucsb_images/logo_hull.png" width="120" alt="Hull tactical logo" style="display: block; margin: 0 auto; margin-top: 20">  
+          <p class="copyright text-muted">Copyright &copy; UCSB Department of Statistics 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/static/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
