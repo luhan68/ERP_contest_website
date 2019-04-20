@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Teams | ERP Contest</title>
+  <title>Leaderboard | ERP Contest</title>
 
   <!-- Bootstrap core CSS -->
   <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,7 +51,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('data') }}">Data</a>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('leaderboard') }}">Teams</a>
+            <a class="nav-link" href="{{ url_for('leaderboard') }}">Leaderboard</a>
           </li>
           </li>
         </ul>
@@ -67,8 +67,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>TEAMS</h1>
-            <span class="subheading">Updated every night after April 12th</span>
+            <h1>LEADERBOARD</h1>
+            <span class="subheading">Updated every night from April 8th to May 8th</span>
           </div>
         </div>
       </div>
@@ -80,30 +80,585 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto"> -->
         
+
+<style type="text/css">
+  #wrapper{
+    margin-right: 450px;
+    margin-left: 450px;
+  }
+  #div1 {
+    display: inline-block;
+    margin-right: 110px;
+}
+
+#div2 {
+    display: inline-block;
+    vertical-align:top；
+}
+</style>
         
-<!-- Leaderboard -->
-  <div class="col-lg-8 col-md-10 mx-auto" class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<!-- Phase 1 -->
+<div id="wrapper">
+        <p><b><i>
+        Phase I result&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPhase II result (ERP realizations) 
+        </b>
+        <br>
+        <font size="3">
+        April 2, 2018 - Oct 1, 2018&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspApril 8, 2019 - April 11, 2019
+        </font></i></p>
+
+  <div id = "div1">
     <font size="3">
-    <main role="main" class="inner mt-4">
+    <main role="main">
       <table class="table">
         <thead>
           <th scope="col">#</th>
           <th scope="col">Team</th>
-          <th scope="col">Score</th>
+          <th scope="col">R-square</th>
         </thead>
         <tbody>
-          {% for s in data %}
           <tr>
-            <th scope="row">{{loop.index}}</th>
-            <td>{{s.teamname}}</td>
-            <td>{{s.output}}</td>
+            <th scope="row">1</th>
+            <td>Matrix</td>
+            <td>-0.0498</td>
           </tr>
-          {% endfor %}
+          <tr>
+            <th scope="row">2</th>
+            <td>Chow RunFast</td>
+            <td>-0.0639</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Team Accuracy</td>
+            <td>-0.0923</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Cheesecake</td>
+            <td>-0.0964</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Jonas</td>
+            <td>-0.1253</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Niko's Team</td>
+            <td>-0.1439</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Little White</td>
+            <td>-0.1740</td>
+          </tr>
+                    <tr>
+            <th scope="row">8</th>
+            <td>Sharpe Predictions</td>
+            <td>-0.2607</td>
+          </tr>
+                    <tr>
+            <th scope="row">9</th>
+            <td>H41L H3D1</td>
+            <td>-0.3247</td>
+          </tr>
+                    <tr>
+            <th scope="row">10</th>
+            <td>TBA</td>
+            <td>-0.6181</td>
+          </tr>
+                    <tr>
+            <th scope="row">11</th>
+            <td>7th floor</td>
+            <td>-0.916</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Army of One</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>Axolotls</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>Big Brother</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>Calvin</td>
+            <td>-0.916</td>
+          </tr> 
+                            <tr>
+            <th scope="row">11</th>
+            <td>CarrotCake</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>Chi-Square</td>
+            <td>-0.916</td>
+          </tr> 
+                            <tr>
+            <th scope="row">11</th>
+            <td>Coop</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>DATA</td>
+            <td>-0.916</td>
+          </tr> 
+                            <tr>
+            <th scope="row">11</th>
+            <td>ES</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>HKHK</td>
+            <td>-0.916</td>
+          </tr> 
+                            <tr>
+            <th scope="row">11</th>
+            <td>James W Squad</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>Jungle</td>
+            <td>-0.916</td>
+          </tr> 
+                            <tr>
+            <th scope="row">11</th>
+            <td>Just for Fun</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>Lehman's Last Analysts</td>
+            <td>-0.916</td>
+          </tr> 
+                            <tr>
+            <th scope="row">11</th>
+            <td>Limp Eggnog</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>MA</td>
+            <td>-0.916</td>
+          </tr> 
+                            <tr>
+            <th scope="row">11</th>
+            <td>Market Like I Tarket</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>Model Behavior</td>
+            <td>-0.916</td>
+          </tr> 
+                            <tr>
+            <th scope="row">11</th>
+            <td>MSSerp</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>prse</td>
+            <td>-0.916</td>
+          </tr> 
+                            <tr>
+            <th scope="row">11</th>
+            <td>Riley's Team</td>
+            <td>-0.916</td>
+          </tr> 
+                    <tr>
+            <th scope="row">11</th>
+            <td>Rosé</td>
+            <td>-0.916</td>
+          </tr>
+           <tr>
+            <th scope="row">11</th>
+            <td>SB</td>
+            <td>-0.916</td>
+          </tr>
+                              <tr>
+            <th scope="row">11</th>
+            <td>Shkreli Bros</td>
+            <td>-0.916</td>
+          </tr>
+           <tr>
+            <th scope="row">11</th>
+            <td>Subprime Quality</td>
+            <td>-0.916</td>
+          </tr>   
+                              <tr>
+            <th scope="row">11</th>
+            <td>Tamias</td>
+            <td>-0.916</td>
+          </tr>
+           <tr>
+            <th scope="row">11</th>
+            <td>TBADAAAR</td>
+            <td>-0.916</td>
+          </tr>   
+                              <tr>
+            <th scope="row">11</th>
+            <td>Team 49</td>
+            <td>-0.916</td>
+          </tr>
+           <tr>
+            <th scope="row">11</th>
+            <td>Team Avatar</td>
+            <td>-0.916</td>
+          </tr>   
+                              <tr>
+            <th scope="row">11</th>
+            <td>Team Filth</td>
+            <td>-0.916</td>
+          </tr>
+           <tr>
+            <th scope="row">11</th>
+            <td>The Freeriders</td>
+            <td>-0.916</td>
+          </tr>   
+                              <tr>
+            <th scope="row">11</th>
+            <td>The Partial Derivatives</td>
+            <td>-0.916</td>
+          </tr>
+           <tr>
+            <th scope="row">11</th>
+            <td>The Spicy Llamas</td>
+            <td>-0.916</td>
+          </tr>   
+                              <tr>
+            <th scope="row">11</th>
+            <td>The Wolves of IV</td>
+            <td>-0.916</td>
+          </tr>
+           <tr>
+            <th scope="row">11</th>
+            <td>The World History</td>
+            <td>-0.916</td>
+          </tr>   
+                              <tr>
+            <th scope="row">11</th>
+            <td>Thicc Data</td>
+            <td>-0.916</td>
+          </tr>
+           <tr>
+            <th scope="row">11</th>
+            <td>VB&F</td>
+            <td>-0.916</td>
+          </tr>   
+                              <tr>
+            <th scope="row">11</th>
+            <td>Wallstreetbets</td>
+            <td>-0.916</td>
+          </tr>
+           <tr>
+            <th scope="row">11</th>
+            <td>walnuts</td>
+            <td>-0.916</td>
+          </tr>   
+                              <tr>
+            <th scope="row">11</th>
+            <td>Zenith</td>
+            <td>-0.916</td>
+          </tr>
+      
         </tbody>
       </table>
     </main>
   </font>
   </div>
+
+
+<!-- Phase 2 table -->
+
+    <div id = "div2" >
+    <font size="3">
+    <main role="main"s>
+      <table class="table">
+        <thead>
+          <th scope="col">#</th>
+          <th scope="col">Team</th>
+          <th scope="col">R-square</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Cheesecake</td>
+            <td>-0.3780</td>
+          </tr>
+                    <tr>
+            <th scope="row">2</th>
+            <td>Sharpe Predictions</td>
+            <td>-0.4346</td>
+          </tr>
+                    <tr>
+            <th scope="row">3</th>
+            <td>TBA</td>
+            <td>-0.5821</td>
+          </tr>
+                    <tr>
+            <th scope="row">4</th>
+            <td>Little White</td>
+            <td>-1.9001</td>
+          </tr>
+                    <tr>
+            <th scope="row">5</th>
+            <td>Team Accuracy</td>
+            <td>-2.9010</td>
+          </tr>
+                              <tr>
+            <th scope="row">6</th>
+            <td>Matrix</td>
+            <td>-3.0884</td>
+          </tr>
+                              <tr>
+            <th scope="row">7</th>
+            <td>Chow RunFast</td>
+            <td>-3.6486</td>
+          </tr>
+           <tr>
+            <th scope="row">8</th>
+            <td>H41L H3D1</td>
+            <td>-3.8660</td>
+          </tr>
+           <tr>
+            <th scope="row">9</th>
+            <td>Jonas</td>
+            <td>-6.0622</td>
+          </tr>
+                     <tr>
+            <th scope="row">10</th>
+            <td>Niko's Team</td>
+            <td>-8.1077</td>
+          </tr>
+                     <tr>
+            <th scope="row">11</th>
+            <td>7th floor</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Army of One</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Axolotls</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Big Brother</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Calvin</td>
+            <td>-12.650</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">11</th>
+            <td>CarrotCake</td>
+            <td>-12.650</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">11</th>
+            <td>Chi-Square</td>
+            <td>-12.650</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">11</th>
+            <td>Coop</td>
+            <td>-12.650</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">11</th>
+            <td>DATA</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>ES</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>HKHK</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>James W Squad</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Jungle</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Just for Fun</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Lehman’s Last Analysts</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Limp Eggnog</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>MA</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Market Like I Tarket</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Model Behavior</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>MSSerp</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>prse</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Riley's Team</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Rosé</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>SB</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Shkreli Bros</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Subprime Quality</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Tamias</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>TBADAAAR</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Team 49</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Team Avatar</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Team Filth</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>The Freeriders</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>The Partial Derivatives</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>The Spicy Llamas</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>The Wolves of IV</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>The World History</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Thicc Data</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>VB&F</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Wallstreetbets</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>walnuts</td>
+            <td>-12.650</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Zenith</td>
+            <td>-12.650</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </main>
+  </font>
+  </div>
+
+</div>
   <hr>
 
 
