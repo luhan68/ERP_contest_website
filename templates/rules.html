@@ -28,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="{{ url_for('home') }}">Hull Tactical ERP Prediction Contest</a>
+      <!-- <a class="navbar-brand">Hull Tactical ERP Prediction Contest</a> -->
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -50,9 +50,16 @@
             <a class="nav-link" href="{{ url_for('rules') }}">Rules</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('data') }}">Data</a>
+              <a class="nav-link">Data</a>
+            <!-- <a class="nav-link" href="{{ url_for('data') }}">Data</a> -->
+            </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('leaderboard') }}">Leaderboard</a>
+              <a class="nav-link">Leaderboard</a>
+            <!-- <a class="nav-link" href="{{ url_for('leaderboard') }}">Leaderboard</a> -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -63,7 +70,7 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-10 col-md-10 mx-auto">
           <div class="page-heading">
             <h1>RULES</h1>
             <span class="subheading">Two Categories: Best Prediction & Most Creative</span>
@@ -76,8 +83,8 @@
   <!-- Main Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-
+      <div class="col-lg-9 col-md-10 mx-auto">
+<!-- 
         <font size="4">
         <b>The rules for the <i>Best Prediction</i> category are as 
         follows.</b>
@@ -88,39 +95,34 @@
         <font size="3">
         <ul>
         <li>
-        The target variable for the prediction problem is "ASPFWR5" 
-        as provided in the Hull Tactical data set.
-        This is the 5 (trading) day forward ERP of the S&amp;P 500 adjusted 
-        for dividends. 
+        The problem is to predict S&P500 daily returns and implement a market timing strategy that buys and sells the index automatically based on the prediction model.
         </li>
         <li>
-        This category of the contest will have two
-        evaluation phases. Phase I will involve an out-of-sample test
-        and Phase II will involve a real-time prediction scenario.
+        The target variable to be predicted is “R” which is 1 (trading) day forward ERP of the S&P500 adjusted for dividends.
         </li>
         <li>
-        Phase I of the contest will be judged on the best R-square 
-        measure of your prediction algorithm based on some period in 
-        2018 (as a result the data set you are given does not include 
-        2018). This will take place on April 8th. 
+        Participants can use any variables in the data file provided by Hull Tactical as predictors as well as are welcome to invent new innovative variables.
         </li>
         <li>
-        Phase II involves a live
-        contest that will run from April 8th to May 8th. It will
-        evaluate your prediction algorithms on real time S&amp;P 500 returns
-        and will include a live leaderboard. These live scores will 
-        again be based on R-squared performance.
+        Participants must pass Qualification Phase to move to Live Competition.
         </li>
         <li>
-        The winner of the Best Prediction category will be based on 
-        the average of the final R-square scores from the two phases.
+          Qualification Phase starts on January 10 and ends on March 2nd. Official certificates will be awarded for successful completion of the Qualification Phase.
         </li>
-        <li> You will be able to update your code during the live
-        portion of the contest. Using additional data sources is 
-        also allowed provided you source them programmatically. 
-        You final implementation will be
-        made public under a free software license. 
+        <li> To pass Qualification Phase, participants should submit their best prediction model (i.e., data sets and codes) for out-of-sample tests by March 2nd.
         </li>
+        <li>
+            Live Competition will begin in early March and end in May.
+            </li>
+            <li>
+                Each team starts with (vertual) $10,000.
+            </li>
+            <li>
+                Participants should determine their position before each trading day begins. Live scores will be updated on Leaderboard at the end of each trading day.
+            </li>
+            <li> To pass Qualification Phase, participants should submit their best prediction model (i.e., data sets and codes) for out-of-sample tests by March 2nd.
+            </li>
+        
         </ul>
         </font>
         <hr>
@@ -153,24 +155,46 @@
         experts consisting of UCSB faculty and Hull Tactical 
         professionals. 
         </li>
-        </ul>
-        <br> 
-        <i>
-        A team is allowed to participate in one or both of
-        the contest categories.  You are encouraged to participate in
-        both. The winners of both categories will deliver
-        a presentation to explain their ideas on May 16h. 
-        <i> 
-        <br>
-        <br>
-        </font>
-        <font size='4'>
-        <b>
-        See more detailed description of the rules: <br>
-        - <a href="/static/rules_creative_category1.pdf"><font color = #0000EE>Creative Category</font></a>
-        <br>- <a href="/static/rules_prediction_phase.pdf"><font color = #0000EE>Prediction Phase</font></a>
-        </b>
-        </font>
+        </ul> -->
+        
+          <div id="rules-in-general" class="section level3">
+            
+          <h3 style="text-align:center">Rules in general</h3>
+          <ul>
+          <li><p>Participants must be enrolled in undergraduate or master’s programs at UCSB.</p></li>
+          <li><p>At most 4 students per team are allowed.</p></li>
+          <li><p>At most 1 master’s student per team is allowed.</p></li>
+          <li><p>Team registration deadline will be <strong>January 24</strong>.</p></li>
+          <li><p>Each team can participate in either or both categories, <em>Best Prediction</em> and <em>Most Creative</em>. <br><br></p></li>
+          </ul>
+          </div>
+          <div id="rules-for-the-best-prediction-category" class="section level3">
+          <h3 style="text-align:center">Rules for the <em>Best Prediction</em> category</h3>
+          <ul>
+          <li><p>The problem is to predict S&amp;P500 daily returns and implement a market timing strategy that buys and sells the index automatically based on the prediction model.</p></li>
+          <li><p>The target variable to be predicted is “<strong>R</strong>” which is 1 (trading) day forward ERP of the S&amp;P500 adjusted for dividends.</p></li>
+          <li><p>Participants can use any variables in the data file provided by Hull Tactical as predictors as well as are welcome to invent new innovative variables.</p></li>
+          <li><p>Participants must pass Qualification Phase to move to Live Competition.</p></li>
+          <li><p>Qualification Phase starts on January 10 and ends on March 2nd. Official certificates will be awarded for successful completion of the Qualification Phase.</p></li>
+          <li><p>To pass Qualification Phase, participants should submit their best prediction model (i.e., data sets and codes) for out-of-sample tests by March 2nd.</p></li>
+          <li><p>Live Competition will begin in early March and end in May.</p></li>
+          <li><p>Each team starts with (vertual) $10,000.</p></li>
+          <li><p>Participants should determine their position before each trading day begins. Live scores will be updated on Leaderboard at the end of each trading day.</p></li>
+          <li><p>The team with a highest balance at the last trading day will be the winner of <em>Best Prediction</em> category.</p></li>
+          <li><p>No short positions (borrowings) are allowed.</p></li>
+          <li><p>Prediction models will be made public under a free software license. <br><br></p></li>
+          </ul>
+          </div>
+          <div id="rules-for-the-most-creative-category" class="section level3">
+          <h3 style="text-align:center">Rules for the <em>Most Creative</em> category</h3>
+          <ul>
+          <li><p>The problem is to come up with a novel analysis of the market timing problem.</p></li>
+          <li><p>Examples could include an explanation of some market phenomena, an insightful analysis of a strategy, an interesting visualization, discovering nonlinear relationships in the variables, etc.</p></li>
+          <li><p>A typewritten proposal must be submitted by March 2nd.</p></li>
+          <li><p>Qualifying teams will be granted directed research course units and should finish their final typewritten reports by May.</p></li>
+          <li><p>Submitted reports will be carefully read and judged by a panel of experts consisting of UCSB faculty and Hull Tactical professionals.</p></li>
+          </ul>
+
       </div>
     </div>
   </div>
