@@ -35,6 +35,13 @@ def rules():
 def data():
     return render_template('data.html')
 
+@app.route('/resource', methods=['GET', 'POST'])
+def resource():
+    return render_template('demo.html')
+
+@app.route('/team', methods=['GET', 'POST'])
+def team():
+    return render_template('team.html')
 
 @app.route('/submit', methods=['GET','POST'])
 def submit():

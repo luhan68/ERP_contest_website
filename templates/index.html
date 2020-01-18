@@ -38,22 +38,25 @@
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse" style="font-size:18px" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#annoucement">Annoucement</a>
+            <a class="nav-link js-scroll-trigger" href="#annoucement"><b>Annoucement</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('rules') }}">Rules</a>
+            <a class="nav-link" href="{{ url_for('rules') }}"><b>Rules</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Data</a>
+            <a class="nav-link"><b>Data</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="">Leaderboard</a>
+              <a class="nav-link" href="{{ url_for('resource') }}"><b>Resource</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger" href=""><b>Leaderboard</b></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link"><b>Team</b></a>
           </li>
         </ul>
       </div>
@@ -65,7 +68,7 @@
     <div class="container">
       <div class="intro-text">
         <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-        <div class="intro-heading text-uppercase">2020 ERP PREDICTION CONTEST </div>
+        <div class="intro-heading text-uppercase">S&P 500 Prediction Contest</div>
         <a class="btn btn-primary btn-xl" href="https://erp-contest-2.herokuapp.com/">More about 2019 ERP Contest</a>
       </div>
     </div>
@@ -101,15 +104,28 @@
             </a>.
           </li>
           <br>
+          <li>Rules page is updated. Click to view the<a
+            href="{{ url_for('rules') }}">
+            <font color=#0000EE>details</font>
+          </a>.</li>
+          <br>
           <li>
-            The data page is updated. Click to download<a
+            Data page is updated. Click to download<a
               href="/static/ucsbdata.csv">
               <font color=#0000EE>datasheet</font>
             </a> and <a
             href="/static/ucsb_glossary.pdf">
             <font color=#0000EE>glossary</font>
-          </a>.
+          </a>. 
           </li>
+          <br>
+          <li>
+              Resources page is updated. It's a  <a
+              href="{{ url_for('resource') }}">
+              <font color=#0000EE>demo</font>
+            </a> in R, showing how to use the datasheet and come to a prediction.
+          </li>
+          
         </ul>
 
       </font>
