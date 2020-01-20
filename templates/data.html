@@ -31,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="{{ url_for('home') }}">Hull Tactical ERP Prediction Contest</a>
+      <!-- <a class="navbar-brand" href="{{ url_for('home') }}">Hull Tactical ERP Prediction Contest</a> -->
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
             <a class="nav-link" href="{{ url_for('rules') }}">Rules</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Data</a>
+            <a class="nav-link" href="{{ url_for('data') }}">Data</a>
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('resource') }}">Resource</a>
           <li class="nav-item">
@@ -101,7 +101,7 @@
           <br>
           <br>
           For this purpose Hull Tactical is providing you with
-          this <a href="/static/dataset.csv">
+          this <a href="/static/ucsbdata.csv">
             <font size="4" color=#0000EE><b>data set</b></font>
           </a>
           of variables that may aid this task.
@@ -109,12 +109,6 @@
           simple linear regression to more sophisticated methods from
           machine learning.
 
-          <br>
-          <br>
-          An updated dataset containing daily data for 2018 and 2019 is available <b><a
-              href="/static/dataset_18_19.csv">
-              <font color=#0000EE>here</font>
-            </a></b>. It could be used for updating models.
           <br>
           <br>
 
@@ -141,9 +135,9 @@
           <br>
 
           The data file above contains various financial variables over a
-          span of 1952-2017. A brief description of each of these variables may be
-          found <a href="/static/variables.pdf">
-            <font color=#0000EE>here</font>
+          span of 1952-2018. A brief description of each of these variables may be
+          found <a href="/static/ucsb_glossary.pdf">
+            <font color=#0000EE><b>here</b></font>
           </a>. To get started on building an intuition as to why
           these may hold predictive power, you may look at the
           <a href="https://en.wikipedia.org/wiki/Baltic_Dry_Index">
@@ -164,51 +158,13 @@
           You can find all of these variables in the description files
           linked above.
 
-
           <br>
           <br>
-          An additional dataset with minute frequency is <a
-            href="https://drive.google.com/open?id=1W_4YQCvUxtNg_Moukrhf_bWKwKY37B1e">
-            <font color=#0000EE><b>here</b></font>
-          </a>. It can be used for most creative category or for improving the model accuracy. Note that we will test
-          the submitted entries for the "Best Prediction" using data only at daily frequency.
-          <br>
-          <br>
-
-
-
         </font>
         <i>
           <font size="4"> ** Please do not use the Hull Tactical data set for any purpose other than the ERP contest.
           </font>
         </i>
-        <hr>
-        <br>
-        <font color=#718792 size="4">
-          <b> BENCHMARK </b>
-        </font>
-        <br>
-        <br>
-        <font size="3">
-          A script containing linear prediction model of ERP along with evaluation metric for Phase I is available <b><a
-              href="/static/example_code_v1.R">
-              <font color=#0000EE>here</font>
-            </a></b>.
-          <br>
-          <br>
-          <div style="height:400px;width:700px;overflow:auto;">
-            <img src="/static/ucsb_images/example_code_v1.jpg" alt="example_R_code">
-          </div>
-          <br>
-          Below is an illustration for the realized and predicted ERP using the linear model on a test data set.
-
-          <img src="/static/perdicted_example.png" width="650" alt="perdiction example"
-            style="display: block; margin-right: 10 auto;">
-          <br>
-          It is not a surprise for this model to produce poor predictions due to linear assumption. <br>We encourage you
-          to explore different statistical methods to improve prediction accuracy.
-        </font>
-        <br>
         <br>
         <br>
       </div>
