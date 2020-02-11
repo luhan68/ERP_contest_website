@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Advisors | 2nd ERP Contest</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="https://ucsb-erp-contest.herokuapp.com/">ERP Contest</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" style="font-size:18px" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('advisors') }}"><b>Advisors</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('rules') }}"><b>Rules</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('data') }}"><b>Data</b></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Resources</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ url_for('resource') }}"><b>Demos</b></a>
+                            <a class="dropdown-item" href="#"><b>News Items</b></a>
+                            <a class="dropdown-item" href="#"><b>Literatures</b></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://erp-contest-2.herokuapp.com/"><b>2019 ERP
+                                    Contest</b></a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('teams') }}"><b>Teams</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href=""><b>Leaderboard</b></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead" style="background-image:url('/static/img/advisors.jpg');">
+        <div class="overlay">
+        <div class="container">
+            <div class="intro-text" >
+                <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
+                <div class="intro-heading text-uppercase">ADVISORS</div>
+                <span class="reach out to them for more info"></span>
+                <!-- <a class="btn btn-primary btn-xl" href="https://erp-contest-2.herokuapp.com/">More about 2019 ERP Contest</a> -->
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <!-- Team -->
+    <section class="bg-light page-section" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Our Team</h2>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="/static/advisors/yunkai.png" alt="">
+                        <h4>Yunkai Zhang</h4>
+                        <p class="text-muted">Advisor</p>
+                        <p>Hi I'm Yunkai Zhang, a fourth-year math and computing double major at the College of Creative
+                            Studies. My main interests lie in deep learning and time series. Feel free to ask me about
+                            LSTMs and transformers, and how to apply them to time series! If you want to do research in
+                            this area, please also contact me!</p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="mailto:yunkai_zhang@ucsb.edu">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/zhykoties">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/zhang-yunkai/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="/static/advisors/kenny.png" alt="">
+                        <h4>Kenny Zhang</h4>
+                        <p class="text-muted">Advisor</p>
+                        <p>Kenny Zhang is a fourth year Mathematics and Statistical Science double major from College of
+                            Creative Studies. He’s doing a PhD starting Fall 2020. He is interested in research topics
+                            including stochastic modeling, time series and econometrics.</p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="mailto:zhehao_zhang@ucsb.edu">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/zhykoties">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/kenny-zhehao-zhang-3b292a146/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="/static/advisors/mark.png" alt="">
+                        <h4>Mark Zhao</h4>
+                        <p class="text-muted">Advisor</p>
+                        <p>Hey this is Mark! I’m a physics/statistics double major who loves traveling, classic movies,
+                            and yummy food! I used to do research in the field of experimental biophysics, but now I’m
+                            working on quantitative finance related projects. I’m very excited about this year’s ERP
+                            contest, and I hope to learn, improve, and simply enjoy it together with you :))</p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="mailto:tingyuzhao@ucsb.edu">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/zhykoties">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/mark-zhao-tingyu/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="/static/advisors/anonymous.png" alt="">
+                        <h4>Alex Shkolnik</h4>
+                        <p class="text-muted">Organizer and supervisor</p>
+                        <p>
+                            Assistant Professor at Center for Financial Mathematics and Actuarial Research (CFMAR) at
+                            UCSB.
+                        </p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="/static/advisors/anonymous.png" alt="">
+                        <h4>Youhong Lee</h4>
+                        <p class="text-muted">Hull Tactical PhD. Fellow</p>
+                        <p>Youhong Lee is a PhD. Candidate in UCSB PStat Department. His office hour for ERP Contest is
+                            Friday 10-12pm in the cubicle SH 5432 X.</p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="mailto:ylee@pstat.ucsb.edu">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="/static/advisors/luhan.png" alt="">
+                        <h4>Lu Han</h4>
+                        <p class="text-muted">Student Staff</p>
+                        <p>This is Lu from Shanghai, China. I'm currently a third-year Computer Engineering major with
+                            minor in Philosophy and Stats. I helped with ERP websites and emails. I interned at
+                            Microsoft and is going to Lyft this summer as software engineer. Feel free to reach me out
+                            for contest or career information. </p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="mailto:luhan@ucsb.edu">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/luhan68">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/lu-alice-han-495920160/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+        </div>
+    </section>
+
+    <!-- Clients -->
+    <!-- <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- Footer -->
+    <footer class="bg-light footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <a href="http://www.hulltactical.com/" onclick="target='_blank'">
+                        <img src="/static/ucsb_images/logo_hull.png" width="120" alt="Hull tactical logo"
+                            style="display: block; margin: 0 auto; margin-top: 20">
+                    </a>
+                    <br>
+                    <a href="http://www.ucsb.edu/" onclick="target='_blank'">
+                        <img src="/static/ucsb_images/ucsb_logo.png" width="120" alt="UCSB circle logo"
+                            style="display: block; margin: 0 auto; margin-top: 20">
+                    </a>
+                    <br>
+                    <p class="copyright text-muted">Copyright &copy; UCSB Department of Statistics 2020</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/static/js/agency.min.js"></script>
+
+</body>
+
+</html>

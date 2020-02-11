@@ -40,21 +40,40 @@
       </button>
       <div class="collapse navbar-collapse" style="font-size:18px" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('advisors') }}"><b>Advisors</b></a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('rules') }}"><b>Rules</b></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('data') }}"><b>Data</b></a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('resource') }}"><b>Resources</b></a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <b>Resources</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{ url_for('resource') }}"><b>Demos</b></a>
+              <a class="dropdown-item" href="#"><b>News Items</b></a>
+              <a class="dropdown-item" href="#"><b>Literatures</b></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://erp-contest-2.herokuapp.com/"><b>2019 ERP Contest</b></a>
+            </div>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('teams') }}"><b>Teams</b></a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href=""><b>Leaderboard</b></a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link"><b>Team</b></a>
-          </li>
+
         </ul>
       </div>
     </div>
@@ -66,7 +85,7 @@
       <div class="intro-text">
         <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
         <div class="intro-heading text-uppercase">S&P 500 Prediction Contest</div>
-        <a class="btn btn-primary btn-xl" href="https://erp-contest-2.herokuapp.com/">More about 2019 ERP Contest</a>
+        <!-- <a class="btn btn-primary btn-xl" href="https://erp-contest-2.herokuapp.com/">More about 2019 ERP Contest</a> -->
       </div>
     </div>
   </header>
@@ -77,65 +96,64 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Annoucements</h2>
-          <h3 class="section-subheading text-muted">Last updated: Jan 20th</h3>
+          <h3 class="section-subheading text-muted"> <a href="https://twitter.com/ContestErp?ref_src=twsrc%5Etfw"
+              class="twitter-follow-button" data-size="large" data-show-count="false" align="center">Follow
+              @ContestErp</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </h3>
         </div>
       </div>
       <font size="4">
         <ul>
-            <li>
-                Please fill out this <a href ="https://docs.google.com/forms/d/e/1FAIpQLSeFK3XE84TvR5sPRe-0OD1GyrX7upvtY4aYnVFYCRHmErjXnw/viewform"><font color=#0000EE>team finder form </font></a>if you're looking for teammates! The registration deadline has been extended to January 31st, 2020. Click 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfY21Rzu2C0zEyP48rcuNaJHJo4ykb_nUxz22scJNttN2VS_w/viewform?usp=sf_link"><font color=#0000EE>here</font></a> to fill in your team information.
-                </li>
-                <br>
           <li>
-            To receive ERP contest related email announcements please
-            join our
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScEOB7WK8RUp9HQywPLDQtjYpf1cvxnNZ6w3Fa9Z5kb-pOgdw/viewform">
-              <font color=#0000EE>mailing list</font>
-            </a> and twitter. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <a href="https://twitter.com/ContestErp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
-              data-show-count="false" align="center">Follow @ContestErp</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            Blair Hull, the founder, and chairman of Hull Tactical, is visiting UCSB campus to have a <b>Q&A session
+              with contest participants</b> on Thursday, February 20th from <b>1:30-2:30 pm</b> at <b>McCune Conference
+              Room, 6020 HSSB</b>.
+          </li>
+          <br>
+          <li>
+            If you are still looking for teammates, please check the <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeFK3XE84TvR5sPRe-0OD1GyrX7upvtY4aYnVFYCRHmErjXnw/viewform">
+              <font color=#0000EE>teammate finder sheet</font>
+            </a> and reach out to people. Contact erpcontest@gmail.com to update your team information.
           </li>
           <br>
           <li>
             The Office Hours with Hull Tactical PhD Fellow, Youhong Lee, are Friday 10-12pm in the cubicle SH 5432 X.
-              </li>
-              <br>
+            The <a href="{{ url_for('advisors') }}">
+                <font color=#0000EE>Advisors</font>
+              </a> page is updated. Feel free to contact them for instructions about the contest.
+          </li>
+          <br>
+
           <li>
-            The kickoff event was held Jan 10th, 2pm at Buchanan Hall 1920. Click to download
-              <a href="/static/erpcontest.pdf"><font color=#0000EE>ERP Contest Presentation</font></a>
-                and <a href="/static/htaa_presentation.pdf"><font color=#0000EE>Hull Tactical Presentation</font>
+            Dataset is now available. Click to download<a href="/static/ucsbdata.csv">
+              <font color=#0000EE>datasheet</font>
+            </a> and <a href="/static/ucsb_glossary.pdf">
+              <font color=#0000EE>glossary</font>
             </a>.
           </li>
           <br>
-          <li>Rules page is updated. Click to view the<a
-            href="{{ url_for('rules') }}">
-            <font color=#0000EE>details</font>
-          </a>.</li>
-          <br>
-          <li>
-            Dataset is now available. Click to download<a
-              href="/static/ucsbdata.csv">
-              <font color=#0000EE>datasheet</font>
-            </a> and <a
-            href="/static/ucsb_glossary.pdf">
-            <font color=#0000EE>glossary</font>
-          </a>. 
+          <li>Each team can participate in <b>either or both categories</b>, <i>Best Prediction and Most Creative</i>.
+            The
+            submission deadlines for both categories will be on <b>March 2nd</b>. Click<a href="{{ url_for('rules') }}">
+              <font color=#0000EE>here</font>
+            </a> to find out more information about rules.
           </li>
           <br>
           <li>
-              Resources page is updated. It's a  <a
-              href="{{ url_for('resource') }}">
-              <font color=#0000EE>demo</font>
-            </a> in R, showing how to use the datasheet and make prediction.
+            The kickoff event was held Jan 10th, 2pm at Buchanan Hall 1920. Click to download
+            <a href="/static/erpcontest.pdf">
+              <font color=#0000EE>ERP Contest Presentation</font>
+            </a>
+            and <a href="/static/htaa_presentation.pdf">
+              <font color=#0000EE>Hull Tactical Presentation</font>
+            </a>.
           </li>
-
-          
         </ul>
-
       </font>
+
+      
       <!-- <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -169,136 +187,17 @@
   </section>
 
 
-  <!-- Team -->
-  <!-- <section class="bg-light page-section" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center"> -->
-          <!-- <h2 class="section-heading text-uppercase">Our Team</h2> -->
-        <!-- </div>
-      </div> -->
-      <!-- <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-            <h4>Kay Garland</h4>
-            <p class="text-muted">Lead Designer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam
-            veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        </div>
-      </div>  -->
-    <!-- </div>
-  </section> -->
-
-  <!-- Clients -->
-  <!-- <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <!-- Footer -->
   <footer class="bg-light footer">
     <br>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-            <a href="http://www.hulltactical.com/" onclick="target='_blank'">
-              <img src="/static/ucsb_images/logo_hull.png" width="120" alt="Hull tactical logo"
-                style="display: block; margin: 0 auto; margin-top: 20">
-            </a>
-            <br>
+          <a href="http://www.hulltactical.com/" onclick="target='_blank'">
+            <img src="/static/ucsb_images/logo_hull.png" width="120" alt="Hull tactical logo"
+              style="display: block; margin: 0 auto; margin-top: 20">
+          </a>
+          <br>
           <a href="http://www.ucsb.edu/" onclick="target='_blank'">
             <img src="/static/ucsb_images/ucsb_logo.png" width="120" alt="UCSB circle logo"
               style="display: block; margin: 0 auto; margin-top: 20">

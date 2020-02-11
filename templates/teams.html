@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Teams | 2nd ERP Contest</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">ERP Contest</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" style="font-size:18px" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+  
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('advisors') }}"><b>Advisors</b></a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('rules') }}"><b>Rules</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('data') }}"><b>Data</b></a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <b>Resources</b>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ url_for('resource') }}"><b>Demos</b></a>
+                <a class="dropdown-item" href="#"><b>News Items</b></a>
+                <a class="dropdown-item" href="#"><b>Literatures</b></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://erp-contest-2.herokuapp.com/"><b>2019 ERP Contest</b></a>
+              </div>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('teams') }}"><b>Teams</b></a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href=""><b>Leaderboard</b></a>
+            </li>
+  
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Header -->
+<header class="masthead" style="background-image:url('/static/img/teams.jpg');">
+  <div class="overlay">
+  <div class="container">
+      <div class="intro-text" >
+          <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
+          <div class="intro-heading text-uppercase">TEAM INFO</div>
+      </div>
+  </div>
+</div>
+</header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-10 mx-auto">
+
+        <br>
+        <br>
+        <!-- Phase 1 -->
+        <div id="wrapper" align="center" style="padding-left: 100px;">
+          <font size="3">
+            <main role="main">
+              <table class="table">
+                <thead>
+                  <th scope="col">Name</th>
+                  <th scope="col">No. of Members</th>
+                  <th scope="col">MS Students</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">PESTO</th>
+                    <td>4</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ryan</th>
+                    <td>1</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">True South</th>
+                    <td>3</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">IAC</th>
+                      <td>4</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">NO.1</th>
+                      <td>3</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Team 1</th>
+                      <td>2</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Arbitrage</th>
+                        <td>4</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Intellectual Souls</th>
+                        <td>4</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ejie</th>
+                        <td>4</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Go_Cubs</th>
+                          <td>1</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">cc</th>
+                          <td>1</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Teampy</th>
+                          <td>1</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Volatile Kangaroo</th>
+                            <td>1</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Simply Lazy</th>
+                            <td>1</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Lone Warrior</th>
+                            <td>1</td>
+                            <td></td>
+                          </tr>
+                          <tr>              
+                            <th scope="row">bells in forts </th>
+                            <td>1</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Team Solo Mid</th>
+                            <td>4</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Chow Mein</th>
+                            <td>4</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                              <th scope="row">R&N</th>
+                              <td>2</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Del Playa</th>
+                              <td>3</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Overstaffed Year One Analysts</th>
+                              <td>2</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Rubber Ducks</th>
+                                <td>4</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">KMG</th>
+                                <td>3</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Cedar Stone Invest</th>
+                                <td>4</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">RK</th>
+                                  <td>1</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Buffett</th>
+                                  <td>4</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Dummy Variables</th>
+                                  <td>3</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Brendan Liu</th>
+                                    <td>1</td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">BuyHighSellLow</th>
+                                    <td>2</td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Wolves of IV</th>
+                                    <td>4</td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">Lukaka</th>
+                                      <td>2</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">SB&Prediction500 </th>
+                                      <td>4</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">NeuralStat</th>
+                                      <td>2</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">JK</th>
+                                        <td>1</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Beta</th>
+                                        <td>2</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Orange Chicken</th>
+                                        <td>4</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                          <th scope="row">Berts</th>
+                                          <td>2</td>
+                                          <td></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">HelloWorld</th>
+                                          <td>4</td>
+                                          <td></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">DY</th>
+                                          <td>1</td>
+                                          <td></td>
+                                        </tr>
+                    
+                  
+
+                </tbody>
+              </table>
+            </main>
+          </font>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <a href="http://www.hulltactical.com/" onclick="target='_blank'">
+                        <img src="/static/ucsb_images/logo_hull.png" width="120" alt="Hull tactical logo"
+                            style="display: block; margin: 0 auto; margin-top: 20">
+                    </a>
+                    <br>
+                    <a href="http://www.ucsb.edu/" onclick="target='_blank'">
+                        <img src="/static/ucsb_images/ucsb_logo.png" width="120" alt="UCSB circle logo"
+                            style="display: block; margin: 0 auto; margin-top: 20">
+                    </a>
+                    <br>
+                    <p class="copyright text-muted">Copyright &copy; UCSB Department of Statistics 2020</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/static/js/agency.min.js"></script>
+
+</body>
+
+</html>

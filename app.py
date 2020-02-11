@@ -39,9 +39,13 @@ def data():
 def resource():
     return render_template('demo.html')
 
-@app.route('/team', methods=['GET', 'POST'])
-def team():
-    return render_template('team.html')
+@app.route('/teams', methods=['GET', 'POST'])
+def teams():
+    return render_template('teams.html')
+
+@app.route('/advisors', methods=['GET', 'POST'])
+def advisors():
+    return render_template('advisors.html')
 
 @app.route('/submit', methods=['GET','POST'])
 def submit():
