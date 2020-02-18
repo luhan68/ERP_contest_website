@@ -37,7 +37,15 @@ def data():
 
 @app.route('/resource', methods=['GET', 'POST'])
 def resource():
+    return render_template('resource.html')
+
+@app.route('/demo1', methods=['GET', 'POST'])
+def demo1():
     return render_template('demo.html')
+
+@app.route('/qr', methods=['GET', 'POST'])
+def qr():
+    return render_template('qualification-rule.html')
 
 @app.route('/teams', methods=['GET', 'POST'])
 def teams():
@@ -46,6 +54,10 @@ def teams():
 @app.route('/advisors', methods=['GET', 'POST'])
 def advisors():
     return render_template('advisors.html')
+
+@app.route('/news', methods=['GET', 'POST'])
+def news():
+    return render_template('news.html')
 
 @app.route('/submit', methods=['GET','POST'])
 def submit():
