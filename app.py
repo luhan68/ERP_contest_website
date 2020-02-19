@@ -45,7 +45,7 @@ def demo1():
 
 @app.route('/qr', methods=['GET', 'POST'])
 def qr():
-    return render_template('qualification-rule.html')
+    return render_template('qualification-rule_0219.html')
 
 @app.route('/teams', methods=['GET', 'POST'])
 def teams():
@@ -58,6 +58,11 @@ def advisors():
 @app.route('/news', methods=['GET', 'POST'])
 def news():
     return render_template('news.html')
+
+
+@app.route('/literature', methods=['GET', 'POST'])
+def literature():
+    return render_template('literature.html')
 
 @app.route('/submit', methods=['GET','POST'])
 def submit():
