@@ -45,7 +45,7 @@ def demo1():
 
 @app.route('/qr', methods=['GET', 'POST'])
 def qr():
-    return render_template('qualification-rule_0219.html')
+    return render_template('qualification-rule_0220.html')
 
 @app.route('/teams', methods=['GET', 'POST'])
 def teams():
