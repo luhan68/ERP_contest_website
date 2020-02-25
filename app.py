@@ -43,9 +43,13 @@ def resource():
 def demo1():
     return render_template('demo.html')
 
-@app.route('/qr', methods=['GET', 'POST'])
-def qr():
+@app.route('/qualificationrule', methods=['GET', 'POST'])
+def qualificationrule():
     return render_template('qualification-rule_0220.html')
+
+@app.route('/liverule', methods=['GET', 'POST'])
+def liverule():
+    return render_template('Rules_live_0224.html')
 
 @app.route('/teams', methods=['GET', 'POST'])
 def teams():
