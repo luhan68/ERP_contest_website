@@ -45,7 +45,7 @@ def demo1():
 
 @app.route('/qualificationrule', methods=['GET', 'POST'])
 def qualificationrule():
-    return render_template('qualification-rule_0220.html')
+    return render_template('qualification-rule_0225.html')
 
 @app.route('/liverule', methods=['GET', 'POST'])
 def liverule():
