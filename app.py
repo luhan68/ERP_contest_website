@@ -47,6 +47,10 @@ def demo1():
 def qualificationrule():
     return render_template('qualification-rule_0225.html')
 
+@app.route('/windows-manual', methods=['GET', 'POST'])
+def windowsmanual():
+    return render_template('manual_windows_user.html')
+
 @app.route('/liverule', methods=['GET', 'POST'])
 def liverule():
     return render_template('Rules_live_0224.html')
