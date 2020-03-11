@@ -28,33 +28,32 @@
 
 <body id="page-top">
 
-<style>
+    <style>
+        .hot-container {
+            min-height: 60px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
 
+        a.btn.btn-blue {
+            background-color: #699DB6;
+            border-color: rgba(0, 0, 0, 0.3);
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+            color: #FFF;
+            width: 30%;
+        }
 
-.hot-container {
-	min-height: 60px;
-	margin-top: 20px;
-	width: 100%;
-	text-align: center;
-} 
+        a.btn.btn-blue:active {
+            background-color: #4F87A2;
+            border-color: rgba(0, 0, 0, 0.5);
+        }
 
-a.btn.btn-blue {
-    background-color: #699DB6;
-    border-color: rgba(0,0,0,0.3);
-    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
-    color: #FFF;
-    width:30%;
-  }
-  
-    a.btn.btn-blue:active {
-      background-color: #4F87A2;
-      border-color: rgba(0,0,0,0.5);
-    }
-    
-    a.btn.btn-blue:hover {
-      background-color: #3C677B;
-      border-color: rgba(0,0,0,0.9);
-    }</style>
+        a.btn.btn-blue:hover {
+            background-color: #3C677B;
+            border-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
@@ -110,41 +109,61 @@ a.btn.btn-blue {
     <!-- Header -->
     <header class="masthead" style="background-image:url('/static/img/rule2.png');">
         <div class="overlay">
-        <div class="container">
-            <div class="intro-text" >
-                <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-                <div class="intro-heading text-uppercase">DEMOS</div>
-                <span class="reach out to them for more info"></span>
-                <!-- <a class="btn btn-primary btn-xl" href="https://erp-contest-2.herokuapp.com/">More about 2019 ERP Contest</a> -->
+            <div class="container">
+                <div class="intro-text">
+                    <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
+                    <div class="intro-heading text-uppercase">DEMOS</div>
+                    <span class="reach out to them for more info"></span>
+                    <!-- <a class="btn btn-primary btn-xl" href="https://erp-contest-2.herokuapp.com/">More about 2019 ERP Contest</a> -->
+                </div>
             </div>
         </div>
-    </div>
     </header>
 
     <br>
     <!-- Team -->
     <br>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-9 col-md-10 mx-auto">
-          <div class="hot-container">
-            <a href="{{ url_for('demo1') }}" class="btn btn-blue">Demo One</a>
-          </div>
+        <div class="row">
+            <div class="col-lg-9 col-md-10 mx-auto">
+                <div class="hot-container">
+                    <a href="{{ url_for('demo1') }}" class="btn btn-blue">Demo One</a>
+                </div>
                 <p>This <b><a href="{{ url_for('demo1') }}">
-                 <font color=#0000EE>demo</font>
-                  </a></b>describes how to read an external data file and then make a couple of linear regression models for prediction in R. In data analysis, a data set from random experiments is to be prepared, which is usually of the form of external source files. Loading the data set on your workspace, a model that explains data generating process (that can be considered close to the truth) is suggested. Since the purpose of our model is forecasting, finally, a best model is to be used to create future values.</p>
+                            <font color=#0000EE>demo</font>
+                        </a></b>describes how to read an external data file and then make a couple of linear regression
+                    models for prediction in R. In data analysis, a data set from random experiments is to be prepared,
+                    which is usually of the form of external source files. Loading the data set on your workspace, a
+                    model that explains data generating process (that can be considered close to the truth) is
+                    suggested. Since the purpose of our model is forecasting, finally, a best model is to be used to
+                    create future values.</p>
                 <br>
-                Download the <a href="/static/checker.zip">
-                  <font color=#0000EE>checker.zip</font></a> to test your code on the server. The zip file should contain checker.py and checker.sh. Here's the <a href="{{ url_for('qualificationrule') }}">
-                  <font color=#0000EE>video </font></a>instruction in MacOS. If you're a window user, click <a href="/static/Connecting to server via SSH.pdf ">
-                      <font color=#0000EE>here </font></a>to find out how to ssh and copy file from local to server.
+    
+                <div class="hot-container">
+                    <a href="{{ url_for('demo2') }}" class="btn btn-blue">Demo Two</a>
+                </div>
+                <p>This <b><a href="{{ url_for('demo2') }}">
+                            <font color=#0000EE>demo</font>
+                        </a></b>is the new version of the min vol demo. major change is adding plots that compare the daily and cumulative returns of S&P 500 and min vol ETF, and discussing low vol anomaly. </p>
+                <br>
+                <br>
+                *Download the <a href="/static/checker.zip">
+                    <font color=#0000EE>checker.zip</font>
+                </a> to test your code on the server. The zip file should contain checker.py and checker.sh. Here's the
+                <a href="{{ url_for('qualificationrule') }}">
+                    <font color=#0000EE>video </font>
+                </a>instruction in MacOS. If you're a window user, click <a
+                    href="/static/Connecting to server via SSH.pdf ">
+                    <font color=#0000EE>here </font>
+                </a>to find out how to ssh and copy file from local to server.
+
             </div>
-          </div>
         </div>
-      </div>
-      <br>
-      <br>
-      <hr>
+    </div>
+    </div>
+    <br>
+    <br>
+    <hr>
 
     <!-- Footer -->
     <footer class="bg-light footer">

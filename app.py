@@ -43,6 +43,10 @@ def resource():
 def demo1():
     return render_template('demo.html')
 
+@app.route('/demo2', methods=['GET', 'POST'])
+def demo2():
+    return render_template('Demo_2.html')
+
 @app.route('/qualificationrule', methods=['GET', 'POST'])
 def qualificationrule():
     return render_template('qualification-rule_0225.html')
