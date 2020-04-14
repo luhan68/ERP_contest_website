@@ -57,7 +57,7 @@ def windowsmanual():
 
 @app.route('/liverule', methods=['GET', 'POST'])
 def liverule():
-    return render_template('Rules_live_0224.html')
+    return render_template('Rules_live_0414.html')
 
 @app.route('/teams', methods=['GET', 'POST'])
 def teams():
