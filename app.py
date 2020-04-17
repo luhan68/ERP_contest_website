@@ -76,37 +76,37 @@ def news():
 def literature():
     return render_template('literature.html')
 
-@app.route('/submit', methods=['GET','POST'])
-def submit():
-    form = UserForm()
-#    #TODO: check for the time of submit
-    if ((form.teamname.data != None) and (form.output.data != None)):
-        teamname = form.teamname.data
-        users = User.query.filter_by(teamname=teamname).all()
-        if len(users) != 0:
-            errors = ["One team can only submit one time per day."]
-            return render_template('submit.html', form=form, errors=errors)
+# @app.route('/submit', methods=['GET','POST'])
+# def submit():
+#     form = UserForm()
+# #    #TODO: check for the time of submit
+#     if ((form.teamname.data != None) and (form.output.data != None)):
+#         teamname = form.teamname.data
+#         users = User.query.filter_by(teamname=teamname).all()
+#         if len(users) != 0:
+#             errors = ["One team can only submit one time per day."]
+#             return render_template('submit.html', form=form, errors=errors)
 
-        post = User(teamname=form.teamname.data, output=form.output.data)
-        post.set_score(len(form.teamname.data))
-        print(len(form.teamname.data))
-        db.session.add(post)
-        db.session.commit()
-        #TODO: check the output format
-        flash('Your post is now live!')
-        messages = ['Your post is now live!']
-        return render_template('submit.html',form=form,messages = messages)
-    else:
-        errors = ["You should fill out all field above."]
-        return render_template('submit.html',form=form,errors=errors)
+#         post = User(teamname=form.teamname.data, output=form.output.data)
+#         post.set_score(len(form.teamname.data))
+#         print(len(form.teamname.data))
+#         db.session.add(post)
+#         db.session.commit()
+#         #TODO: check the output format
+#         flash('Your post is now live!')
+#         messages = ['Your post is now live!']
+#         return render_template('submit.html',form=form,messages = messages)
+#     else:
+#         errors = ["You should fill out all field above."]
+#         return render_template('submit.html',form=form,errors=errors)
 
-@app.route('/leaderboard', methods=['GET', 'POST'])
-def leaderboard():
-    solution = User.query.order_by(User.output.desc()).all()
-    for i in solution:
-        print(i)
+# @app.route('/leaderboard', methods=['GET', 'POST'])
+# def leaderboard():
+#     solution = User.query.order_by(User.output.desc()).all()
+#     for i in solution:
+#         print(i)
 
-    return render_template("leaderboard.html", data = solution)
+#     return render_template("leaderboard.html", data = solution)
 
 
 # # models
